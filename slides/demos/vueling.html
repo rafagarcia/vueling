@@ -170,7 +170,7 @@
                     <h2 class="text-title"><strong>Nuestro objetivo</strong></h2><br />
                     <p class="text-data">Entender las ventajas que ofrece un framework como Vue.js.</p>
                     <p class="text-data">Comprender las herramientas básicas de Vue.js.</p>
-                    <p class="text-data">Desarrollar una aplicación SPA completa con Vue.js.</p>
+                    <p class="text-data">Analizar una aplicación SPA completa con Vue.js.</p>
                 </div>
             </div>
             <!-- .end .wrap -->
@@ -264,7 +264,7 @@
               <p><strong>R</strong>eusable: reutilizables tantas veces como sea necesario</p>
               <p><strong>S</strong>mall: pequeños para aprovechar al máximo su capacidad</p>
               <p><strong>T</strong>estable: testeables para minimizar errores en su uso a lo largo del ciclo de vida de la aplicación en la que se integren</p>
-              <p>Ver más en <strong>https://addyosmani.com/first/</strong></p>
+              <p>Ver más en <a href="https://addyosmani.com/first/">https://addyosmani.com/first/</a>
             </div>
           </section>
           <section class="bg-white">
@@ -277,7 +277,7 @@
                 <br />
                 <figure><img src="../static/images/atomic-design.png" alt="Atomic Design" /></figure>
                 <br />
-                <p>Ver más en <strong>http://bradfrost.com/blog/post/atomic-web-design/</strong></p>
+                <p>Ver más en <a href="http://bradfrost.com/blog/post/atomic-web-design/">http://bradfrost.com/blog/post/atomic-web-design/</a></p>
             </div>
           </section>
           <section class="bg-white">
@@ -342,7 +342,7 @@ const app = new Vue({
                   <br />
                   <p>Sucesor del patrón MVC.</p>
                   <p>Provee la capacidad de usar bindings para transferir datos desde y hacia la vista, por lo que el controlador solo es responsable de implementar el comportamiento de la vista. En este caso, el controlador es llamado modelo-vista (view model), dando origen al patrón MVVM</p>
-                  <p>Ver mas en <a href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel">MVVM en Wikipedia</a></p>
+                  <p>La ventaja frente al MVC viene al usar <b>binding declarativo</b> para transferir los datos desde y hacia el modelo a la vista.</p>
                 </div>
                 <div class="content-left">
                   <div class="column aligncenter">
@@ -431,7 +431,7 @@ var app2 = new Vue({
                 <div class="content-left">
                     <h2>Directivas: v-model</h2>
                     <br />
-                    <p>v-model enlaza el elemento del DOM con el atributo seleccionado de la propiedad data dentro de nuestra instancia vue</p>
+                    <p>v-model enlaza el elemento del DOM al que se asigna la directiva con el atributo seleccionado de la propiedad data dentro de nuestra instancia vue</p>
                     <p>Se puede aplicar a los elementos input, select, textarea, o a un componente.</p>
                 </div>
                 <div class="content-left">
@@ -500,7 +500,7 @@ const app = new Vue({
                 <br />
                 <p>v-if oculta o muestra el elemento DOM al que se le asigna en función del valor booleano del modelo que seleccionemos</p>
                 <p>A diferencia de v-show, cuando la propiedad del modelo a la que se le vincule sea false, el elemento se elimina del DOM</p>
-                <p>Para optimizar rendimiento, mejor usarlo en elementos cuya visibilidad NO va a modificarse a menudo (Una única evaluación)</p>
+                <p>Para optimizar rendimiento, mejor usarlo en elementos cuya visibilidad NO va a modificarse a menudo (una única evaluación)</p>
                 <p>Si se quiere ocultar/mostrar un bloque HTML, usar la etiqueta template</p>
               </div>
               <div class="content-left">
@@ -599,7 +599,7 @@ const app = new Vue({
             <div class="content-left">
               <h2>Directivas: v-for</h2>
               <br />
-              <p>v-for permite iterar sobre un rango, un array, un objeto o un array de objetos</p>
+              <p>v-for permite iterar sobre un rango numérico, un array, un objeto o un array de objetos</p>
               <p>Requiere la sintaxis especial 'item in items', donde items es la fuente de datos e item es un alias de cada elemento iterado.</p>
             </div>
             <div class="content-left">
@@ -1370,7 +1370,7 @@ const app = new Vue({
                 <br />
                 <p>Los mixins son una manera flexible de distribuir funcionalidad reutilizable entre componentes Vue.</p>
                 <p>Cuando un componente importa un mixin, todas las opciones del mixin se mezclan con las opciones del propio componente.</p>
-                <p>Si un mixin y un componente contienen opciones que se solapan en sus respectivios hooks de ciclo de vida, se mergean. De este modo, en el caso de que mixin y componente compartan hooks, se llamarán primero los del mixin.</p>
+                <p>Si un mixin y un componente contienen opciones que se solapan en sus respectivos hooks de ciclo de vida, se mergean. De este modo, en el caso de que mixin y componente compartan hooks, se llamarán primero los del mixin.</p>
                 <p>Si un mixin y un componente compartieran métodos con el mismo nombre, los métodos del componente tendrán prioridad sobre los del mixin.</p>
               </div>
               <div class="content-left">
